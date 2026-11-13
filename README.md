@@ -1,4 +1,8 @@
-# Brocade
+# boken
+
+boken 由 FFreshFish 独立维护，基于 [akiasprin/brocade](https://github.com/akiasprin/brocade) 继续开发，并保留原项目及第三方组件的许可证与归属声明。现有 crate、二进制、命令和服务仍沿用 `brocade` 名称，以保持安装与运行兼容。
+
+[问题反馈](https://github.com/FFreshFish/boken/issues) · [Wiki](https://github.com/FFreshFish/boken/wiki) · [从源码构建](docs/build.md)
 
 Brocade 是自建多地域 Xray 网络的声明式控制系统：用一份模型描述机器、线路、用户与授权，把模型确定性地编译成每台机器的配置，再由机器上的 Agent 持续收敛。
 
@@ -60,6 +64,8 @@ Brocade 只支持仓库内维护的 Xray fork（[`components/xray-core`](compone
 | 出口 | 直连、自定义隧道、Cloudflare WARP（MASQUE）、VPN Gate |
 
 ## 试用
+
+以下下载示例使用原 Brocade 上游发行包，不包含 boken 的新增改动。使用本项目代码请先[从源码构建](docs/build.md)，并选择包含所需功能的分支。
 
 在 Linux 服务器上复制执行以下命令，自动下载最新正式版中适合 CPU 架构的静态安装包，校验 SHA-256 后启动交互安装：
 

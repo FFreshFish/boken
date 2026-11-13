@@ -4,6 +4,8 @@
 
 ## 下载
 
+本页保留的 `akiasprin/brocade/releases` 下载示例获取原 Brocade 上游发行包，不包含 boken 的新增改动。使用 boken 代码时，请选择对应分支[从源码构建](build.md)；本项目后续发行包以 [boken Releases](https://github.com/FFreshFish/boken/releases) 为准。
+
 自动下载最新正式版基础包的完整命令见 [README「试用」](../README.md#试用)：按 CPU 架构选择兼容 GNU / musl 系统的静态包，校验后运行包内安装器，不需要额外下载脚本。命令兼容 v0.3.1–v0.3.5 没有变体字段的旧包名，临时下载目录在退出时清理。指定版本或容器版时使用下面的手动下载步骤。
 
 从 [Releases](https://github.com/akiasprin/brocade/releases/latest) 下载与服务器匹配的发行包和同名 `.sha256`。默认选择 `base` 基础版；需要容器控制面时选择 `cvm` 容器扩展版。两者由同一源码构建，容器扩展安装通过切换 Console 完成。
